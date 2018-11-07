@@ -1,0 +1,250 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>La voiture à Paris</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery2.js"></script>
+  <script src="jquery.fullpage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".box").on("click", "li", function(){
+        var tabsId = $(this).attr("id");
+        $(this).addClass("active").siblings().removeClass("active");
+        $("#" + tabsId + "-content-box").addClass("active").siblings().removeClass("active");
+      })
+    })
+  </script>
+</head>
+
+<body>
+
+  <div id="fullpage">
+<section><h1  id="first">Quel avenir pour la voiture à Paris?</h1></section>
+<section>
+  <h1 class="title">Pourquoi?</h1>
+  <p class="description">Bouger, se déplacer, voyager… Acquise au fur et à mesure de l’évolution et de la démocratisation des transports,
+    la mobilité est une liberté dont personne ne voudrait être privé. Récemment, la hausse du prix du carburant amène les Français à se poser
+    la question de leurs déplacements : sommes-nous prêts à nous passer d’une voiture individuelle, si pratique ? <br><br>
+Alors que 89% des Parisiens affirment avoir le choix entre plusieurs moyens de transport selon l’INSEE,
+on constate effectivement que l’usage de la voiture est à la marge de celui des transports en communs.
+Avec le taux d’équipement le plus faible de France (36,8% contre 86% en Pays de la Loire), uniquement 13% de Parisiens se rendent au travail en voiture. <br><br>
+Dans une ville qui laisse de plus en plus de place aux autres modes de transport, il semble légitime de se poser la question de l’avenir de la voiture à Paris.
+Et pour mieux l’anticiper, nous proposons de nous intéresser à son évolution sur les dernières années, tout en y intégrant la notion de la pollution de l’air.
+</p>
+</section>
+<section>
+  <h1 class="title">Moins de voitures circulent à Paris en 2017 qu'en 2014</h1>
+  <p class="description">
+    Débit  (nombre de voitures qui passe la boucle par heure)<br>Après une augmentation continue du débit routier depuis 2013, celui-ci chute brutalement en 2017. Les voies sur berge ont été officiellement rendue piétonnes cette
+  même année. Faut-il voir une causalité?</p>
+
+<div class="placeholders">
+  <script type='text/javascript' src='tableau.js'></script>
+  <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+    <object class='tableauViz' width='768' height='332' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='&#47;t&#47;tableauhanady' />
+      <param name='name' value='CourbeMoyennetauxetdbitparanne&#47;Sheet1' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+      <param name='showAppBanner' value='false' />
+      <param name='filter' value='iframeSizedToWindow=true' />
+    </object>
+  </div>
+</div>
+
+</section>
+<section>
+  <h1 class="title">...Ce qui se ressent sur la densité du trafic</h1>
+  <p class="description">Taux (temps de présence d’un véhicule sur la boucle en pourcentage d’une heure)
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="placeholders">
+  <script type='text/javascript' src='tableau.js'></script>
+  <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+    <object class='tableauViz' width='768' height='332' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='&#47;t&#47;tableauhanady' />
+      <param name='name' value='CourbeMoyennetauxetdbitparanne&#47;Sheet2' />
+      <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+      <param name='showAppBanner' value='false' />
+      <param name='filter' value='iframeSizedToWindow=true' />
+    </object>
+  </div>
+</div>
+
+</section>
+<section>
+  <h1 class="title">En parallèle, la qualité de l'air parisien de cesse de s'améliorer depuis 5 ans</h1>
+  <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <img src="pollution.png" alt="pollution paris" class="evolution">
+</section>
+<section>
+  <h1 class="title">Les axes les plus denses sont-ils les plus pollués?</h1>
+  <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="box">
+      <ul>
+        <li id="tab-one" class="active">
+          <h4>2013</h4>
+        </li>
+        <li id="tab-two">
+          <h4>2014</h4>
+        </li>
+        <li id="tab-three">
+          <h4>2015</h4>
+        </li>
+        <li id="tab-four">
+          <h4>2016</h4>
+        </li>
+        <li id="tab-five">
+          <h4>2017</h4>
+        </li>
+      </ul>
+      <div class="content">
+          <div id="tab-one-content-box" class="hide active">
+              <script type='text/javascript' src='tableau.js'></script>
+              <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+                <object class='tableauViz' width='768' height='332' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='&#47;t&#47;tableauhanady' />
+                    <param name='name' value='2013entire&#47;2013' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='showAppBanner' value='false' />
+                    <param name='filter' value='iframeSizedToWindow=true' />
+                  </object>
+              </div>
+          </div>
+          <div id="tab-two-content-box" class="hide">
+            <script type='text/javascript' src='tableau.js'></script>
+            <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+              <object class='tableauViz' width='768' height='332' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='&#47;t&#47;tableauhanady' />
+                <param name='name' value='2014entire&#47;2014' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='showAppBanner' value='false' />
+                <param name='filter' value='iframeSizedToWindow=true' />
+              </object>
+            </div>
+          </div>
+          <div id="tab-three-content-box" class="hide">
+            <script type='text/javascript' src='tableau.js'></script>
+            <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+              <object class='tableauViz' width='768' height='332' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='&#47;t&#47;tableauhanady' />
+                <param name='name' value='2015entire&#47;Sheet1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='showAppBanner' value='false' />
+                <param name='filter' value='iframeSizedToWindow=true' />
+              </object>
+            </div>
+          </div>
+          <div id="tab-four-content-box" class="hide">
+            <script type='text/javascript' src='tableau.js'></script>
+            <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+              <object class='tableauViz' width='768' height='332' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='&#47;t&#47;tableauhanady' />
+                <param name='name' value='2016entire&#47;Sheet1' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='showAppBanner' value='false' />
+                <param name='filter' value='iframeSizedToWindow=true' />
+              </object>
+            </div>
+          </div>
+          <div id="tab-five-content-box" class="hide">
+            <script type='text/javascript' src='tableau.js'></script>
+            <div class='tableauPlaceholder' style='width: 768px; height: 332px;'>
+              <object class='tableauViz' width='768px' height='332px' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='&#47;t&#47;tableauhanady' />
+                <param name='name' value='2017entire&#47;2017' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='showAppBanner' value='false' />
+                <param name='filter' value='iframeSizedToWindow=true' />
+              </object>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+<section>
+  <h1 class="title">Comprendre les usagers</h1>
+  <p class="description">Les automobilistes utilisent leurs voitures pour se rendre au travail.
+    Cela explique pourquoi le trafic chute radicalement les week-ends et en été.</p>
+    <div class="schema">
+      <script type='text/javascript' src='tableau.js'></script>
+      <div class='tableauPlaceholder2'>
+        <object class='tableauViz' width='100%' height='100%' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='&#47;t&#47;tableauhanady' />
+          <param name='name' value='Moyennesmensuelles&#47;courbe' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='showAppBanner' value='false' />
+          <param name='filter' value='iframeSizedToWindow=true' />
+        </object>
+      </div>
+      <script type='text/javascript' src='tableau.js'></script>
+      <div class='tableauPlaceholder2'>
+        <object class='tableauViz' width='100%' height='100%' style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Feu-west-1a.online.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='&#47;t&#47;tableauhanady' />
+          <param name='name' value='Parjours&#47;Feuille1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='showAppBanner' value='false' />
+          <param name='filter' value='iframeSizedToWindow=true' />
+        </object>
+      </div>
+    </div>
+</section>
+<section>
+  <h1 class="title">Comment débloquer le trafic et préserver notre atmosphère?</h1>
+  <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+</section>
+<section>
+  <h1 class="title">Fin</h1>
+  <p class="description">Ce site a été réalisé par 4 étudiantes du master MIN: Hanady Abboud, Juliette Dixmier, Claire Pétreault, Joanne Saba. blablabalbalbaa </p>
+</section>
+  </div>
+
+  <script type="text/javascript">
+      $('#fullpage').fullpage();
+  </script>
+
+</body>
+</html>
