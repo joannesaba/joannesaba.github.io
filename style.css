@@ -24,34 +24,79 @@ body {
  }
 
  #fullpage section:nth-child(2) {
-    background: #F8F8FF;
+   background-image: url('ciel.jpg');
+   height: 100%;
+   /* Center and scale the image nicely */
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
   }
 
   #fullpage section:nth-child(3) {
-     background: #F8F8FF;
+    background-image: url('ciel.jpg');
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    }
 
    #fullpage section:nth-child(4) {
-      background: #F8F8FF;
+     background-image: url('ciel.jpg');
+     height: 100%;
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
     }
 
     #fullpage section:nth-child(5) {
-       background: #F8F8FF;
+      background-image: url('ciel.jpg');
+      height: 100%;
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
      }
      #fullpage section:nth-child(6) {
-        background: #F8F8FF;
+       background-image: url('ciel.jpg');
+       height: 100%;
+       /* Center and scale the image nicely */
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
       }
       #fullpage section:nth-child(7) {
-         background: #F8F8FF;
+        background-image: url('ciel.jpg');
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
        }
        #fullpage section:nth-child(8) {
-          background: #F8F8FF;
+         background-image: url('ciel.jpg');
+         height: 100%;
+         /* Center and scale the image nicely */
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
         }
         #fullpage section:nth-child(9) {
-           background: #F8F8FF;
+          background-image: url('ciel.jpg');
+          height: 100%;
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
          }
          #fullpage section:nth-child(9) {
-            background: #F8F8FF;
+           background-image: url('ciel.jpg');
+           height: 100%;
+           /* Center and scale the image nicely */
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
           }
 
 #first {
@@ -174,3 +219,4 @@ body {
   margin: 0;
 
 }
+
